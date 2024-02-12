@@ -184,6 +184,18 @@ img{
   width: 30%;
   background-color: yellow;
 }
+.col-l{
+  padding: 20px;
+
+}
+.col-table{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+
+
 @media screen and (max-width: 992px){
   .schemes{
     flex-direction: column;
