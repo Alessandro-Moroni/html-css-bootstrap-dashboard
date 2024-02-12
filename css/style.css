@@ -88,28 +88,34 @@ img{
   background-image: url(../img/sidebar-bg.png);
   background-color: rgb(15, 38, 60);
   color: white;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 .left-menu{
   height: 90%;
 }
+.left-menu div{
+  margin-bottom: 20px;
+  padding: 2px 4px;
+}
+.left-menu div:hover{
+  background-color: rgb(184, 179, 179);
+}
+.left-menu div span{
+  margin-left: 10px;
+}
 .admin{
   height: 10%;
 }
-.fixed-left nav ul li{
-  list-style: none;
-  margin-bottom: 15px;
+.admin div:hover{
+  background-color: rgb(184, 179, 179);
+  padding: 2px 4px;
+  
 }
-.fixed-left nav ul li a{
-  text-decoration: none;
-  color: white;
+.admin span{
+  margin-left: 10px;
+  
 }
-.fixed-left nav ul li i{
-  margin-right: -40px;
-}
-.fixed-left nav ul li a:hover{
-  color: gray;
-}
+
 
 /* graphs */
 .head{
