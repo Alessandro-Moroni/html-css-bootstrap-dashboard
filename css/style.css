@@ -1,0 +1,153 @@
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+  height: 80px;
+  background-color: rgb(248, 249, 250);
+  padding: 0 20px;
+}
+
+
+.graphs{
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.debug{
+  border: 1px solid black;
+}
+.debug-g{
+  border: 1px solid green;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.head{
+  height: 120px;
+}
+
+
+/* header */
+.logo{
+  height: 100%;
+  width: 12%;
+}
+.phone-logo{
+  display: none;
+}
+.text-chat{
+  height: 70%;
+  width: 70%;
+  border-radius: 10px;
+  background-color: rgb(229, 229, 229);
+}
+.text-chat input{
+  height: 100%;
+  width: 90%;
+  border: none;
+  background-color: rgb(229, 229, 229);
+}
+.text-chat div{
+  height: 100%;
+  width: 5%;
+}
+.menu{
+  width: 12%;
+}
+.menu ul li{
+ list-style: none;
+}
+.menu ul li .fa-list, .fa-ellipsis-vertical{
+ color: rgb(91, 88, 88);
+}
+.menu ul li .fa-question{
+  color: white;
+  background-color: rgb(91, 88, 88);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px
+}
+.menu ul li .fa-bell{
+ color: rgb(247, 139, 0);
+}
+.menu nav ul li a:hover{
+  color: gray;
+}
+
+/* main */
+.fixed-left{
+  background-color: yellow;
+  height: 100vh;
+  width: 180px;
+  background-image: url(../img/sidebar-bg.png);
+  background-color: rgb(15, 38, 60);
+  color: white;
+  padding: 20px 0;
+}
+.left-menu{
+  height: 90%;
+}
+.admin{
+  height: 10%;
+}
+.fixed-left nav ul li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+.fixed-left nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+.fixed-left nav ul li i{
+  margin-right: -40px;
+}
+.fixed-left nav ul li a:hover{
+  color: gray;
+}
+
+
+.container-l{
+  width: 70%;
+  height: 1000px;
+  
+}
+.container-r{
+  width: 30%;
+  height: 1000px;
+
+}
+.next-class{
+  height: 70%;
+}
+.faq{
+  height: 20%;
+}
+.todo{
+  height: 20%;
+}
+.graphic{
+  height: 80%;
+}
+@media screen and (max-width: 992px){
+  .graphs{
+    /* margin-left: 100px; */
+  }
+  .schemes{
+    flex-direction: column;
+  }
+  .fixed-left{
+    width: 100px;
+  }
+  .container-l,
+  .container-r{
+    width: 100%;
+  }
+  .menu-off{
+    display: none;
+  }
+}
