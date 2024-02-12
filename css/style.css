@@ -5,7 +5,7 @@
 header{
   height: 80px;
   background-color: rgb(248, 249, 250);
-  padding: 0 20px;
+  padding: 2px 0;
 }
 
 
@@ -25,15 +25,14 @@ img{
   height: 100%;
   object-fit: contain;
 }
-.head{
-  height: 120px;
-}
 
 
 /* header */
 .logo{
   height: 100%;
-  width: 12%;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 }
 .phone-logo{
   display: none;
@@ -55,7 +54,9 @@ img{
   width: 5%;
 }
 .menu{
-  width: 12%;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
 }
 .menu ul li{
  list-style: none;
@@ -110,6 +111,64 @@ img{
   color: gray;
 }
 
+/* graphs */
+.head{
+  height: 120px;
+  background-color: rgb(27, 114, 232);
+  color: white;
+  padding: 10px;
+}
+.head .l-head{
+  width: 85%;
+}
+
+.head .name div div{
+  margin: 0 10px;
+  background-color: rgb(22, 91, 186);
+  height: 25px;
+  padding: 0 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+.head .name div .more{
+  margin: 0 10px;
+  background-color: rgb(22, 91, 186);
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 25px;
+  display: none;
+}
+.head .name div div:hover{
+  background-color: rgb(96, 140, 201);
+}
+.head .l-head .name{
+  width: 65%;
+}
+.head .l-head .number{
+  width: 35%;
+}
+.head .number p{
+  font-size: 2.5rem;
+}
+.head .plus{
+  width: 15%;
+  height: 50%;
+}
+.head .plus span{
+  margin-right: 20px;
+}
+.head .plus div{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+
 
 .container-l{
   width: 70%;
@@ -134,9 +193,6 @@ img{
   height: 80%;
 }
 @media screen and (max-width: 992px){
-  .graphs{
-    /* margin-left: 100px; */
-  }
   .schemes{
     flex-direction: column;
   }
@@ -150,4 +206,53 @@ img{
   .menu-off{
     display: none;
   }
+  .des-logo{display: none;
+  }
+  .phone-logo{
+    display: block;
+  }
+  .text-chat{
+    width: 80%;
+  }
+  .menu{
+    width: 5%;
+  }
+ .menu ul li .fa-list{
+  display: none;
+ }
+ .menu ul li .fa-question{
+  display: none;
+ }
+ .menu ul li .fa-ellipsis-vertical{
+  display: none;
+ }
+ main .graphs .head {
+  height: 280px;
+  flex-direction: column-reverse;
+}
+.graphs .head .l-head{
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+ }
+.graphs .head .l-head .name{
+  margin-bottom: 20px;
+  width: 100%;
+ }
+.graphs .head .l-head .number{
+  width: 100%;
+ }
+.graphs .head .plus{
+  width: 100%;
+ }
+.graphs .head .l-head .name .less{
+  display: none;
+ }
+.graphs .head .l-head .name .more{
+  display: block;
+ }
+
+
+
+
 }
