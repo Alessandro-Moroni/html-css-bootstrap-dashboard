@@ -117,7 +117,7 @@ img{
 }
 
 
-/* graphs */
+/* head */
 .head{
   height: 120px;
   background-color: rgb(27, 114, 232);
@@ -175,28 +175,14 @@ img{
 }
 
 
+/* columns */
 
-.container-l{
+.container-col-l{
   width: 70%;
-  height: 1000px;
-  
 }
-.container-r{
+.container-col-r{
   width: 30%;
-  height: 1000px;
-
-}
-.next-class{
-  height: 70%;
-}
-.faq{
-  height: 20%;
-}
-.todo{
-  height: 20%;
-}
-.graphic{
-  height: 80%;
+  background-color: yellow;
 }
 @media screen and (max-width: 992px){
   .schemes{
@@ -257,7 +243,13 @@ img{
 .graphs .head .l-head .name .more{
   display: block;
  }
-
+.container-columns{
+  flex-direction: column;
+}
+.container-col-l,
+.container-col-r{
+  width: 100%;
+}
 
 
 
