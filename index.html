@@ -40,9 +40,9 @@
           <li><a href="">
             <i class="fa-solid fa-ellipsis-vertical"></i>
            </a></li>
-          <li><a href="">
-            <i class="fa-solid fa-bell"></i>
-          </a></li>
+          <li>
+           
+          </li>
           
         </ul>
       </nav>
@@ -76,7 +76,7 @@
 
       <div class="graphs">
 
-        <div class="debug head d-flex ">
+        <div class="head d-flex ">
           <div class="d-flex l-head">
             <div class="name">
               <div class="d-flex align-items-center">
@@ -107,92 +107,126 @@
               <i class="fa-solid fa-plus"></i>
             </button>
             
-            <div class="offcanvas offcanvas-end container-fluid " tabindex="-1"     id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo utente</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"   aria-labelledby="offcanvasExampleLabel">
+              <div class="container-fluid ">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo utente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
 
-              <div class="row mb-3">
+                <div class="row row-cols-2 mb-3">
+                  
+                  <div class="col">
+                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="col">
+                    <label for="exampleInputEmail1" class="form-label">Cognome</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                </div>
+
+                <div class="row row-cols-2 mb-3">
+
+                  <div class="col">
+                    Email
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                  </div>
+                  <div class="col">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+
+                </div>
+
+                <div class="row row-cols-2 mb-3">
+
+                  <div class="col">
+                    Email
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+
+                </div>
+
+                <div class="row mb-3">
+
+                  <div class="col">
+                    <label for="exampleInputEmail1" class="form-label">Indirizzo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                      
+                </div>
+
+                <div class="row mb-3">
+               
+                  <div class="col-6">
+                    <label for="exampleInputEmail1" class="form-label">Città</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="col-4">
+                    Stato
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Scegli...</option>
+                      <option value="1">Italia</option>
+                      <option value="2">Germania</option>
+                      <option value="3">Francia</option>
+                    </select>
+                  </div>
+                  <div class="col-2">
+                    <label for="exampleInputEmail1" class="form-label">CAP</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                </div>
                 
-                <div class="col-6">
-                  <label for="exampleInputEmail1" class="form-label">Nome</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="col-6">
-                  <label for="exampleInputEmail1" class="form-label">Cognome</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-
-              </div>
-
-              <div class="row mb-3">
-
-                <div class="col-6">
-                  Email
-                      <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                </div>
-                <div class="col-6">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="row mb-3">
+                  <div class="col">
+                    Foto
+                    <div class="input-group mb-3">
+                     <span class="input-group-text" id="inputGroup-sizing-default">Scegli file</span>
+                     <input type="text" class="form-control" aria-label="Nessun file selezionato" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                 </div>
                 </div>
 
-              </div>
-
-              <div class="row mb-3">
-
-                <div class="col-6">
-                  Email
-                  <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="row mb-3">
+                  <div class="col">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                    </div>
                   </div>
                 </div>
-                <div class="col-6">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+
+                <div class="row mb-3">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="submit" class="btn btn-warning">Svuota</button>
+                  </div>
                 </div>
+
+
+
 
               </div>
-
-              <div class="row mb-3">
-
-                <div class="col">
-                  <label for="exampleInputEmail1" class="form-label">Indirizzo</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                    
-              </div>
-
-              <div class="row mb-3">
-
-              
-                <div class="col-6">
-                  <label for="exampleInputEmail1" class="form-label">Città</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="col-4">
-                  <label for="exampleInputEmail1" class="form-label">Stato</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="col-2">
-                  <label for="exampleInputEmail1" class="form-label">CAP</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-
-              </div>
-                
-
             </div>
           </div>
         </div>
         
         <div class="container-fluid">
           <div class="row row-cols-1 ">
-            <div class="col my-2  col-lg-8 debug">
+            <div class="col my-2  col-lg-8">
 
               <div class="card my-2">
                 <div class="name-table d-flex align-items-center ">
@@ -354,7 +388,7 @@
 
             </div>
 
-            <div class="col my-2 col-lg-4 debug">
+            <div class="col my-2 col-lg-4">
 
               <div class="card my-2">
                 <div class="name-table d-flex align-items-center ">
@@ -426,3 +460,6 @@
   </footer>
 </body>
 </html>
+
+
+  
