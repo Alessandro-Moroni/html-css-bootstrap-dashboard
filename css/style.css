@@ -19,7 +19,9 @@ img{
   height: 100%;
   object-fit: contain;
 }
-
+.container-main{
+  height: 100vh;
+}
 
 /* header */
 .logo{
@@ -70,14 +72,21 @@ img{
 .menu ul li .fa-bell{
  color: rgb(247, 139, 0);
 }
-.menu nav ul li a:hover{
-  color: gray;
+.menu nav ul li :hover .fa-solid{
+  color: rgb(173, 171, 171);
+}
+.menu nav ul li :hover .fa-bell{
+  color: rgb(255, 115, 0);
+}
+
+.position-absolute{
+  right: 20px;
 }
 
 /* main */
 .fixed-left{
   background-color: yellow;
-  height: 100vh;
+  height: 100%;
   width: 180px;
   background-image: url(../img/sidebar-bg.png);
   background-color: rgb(15, 38, 60);
@@ -156,14 +165,16 @@ img{
   width: 15%;
   height: 50%;
 }
-.head .plus span{
+.head .plus .new-student{
   margin-right: 20px;
 }
 .head .plus .btn-primary{
   color: white;
   border: 1px solid white;
 }
-
+.offcanvas{
+  width: 50% !important;
+}
 
 /* columns */
 
@@ -253,6 +264,9 @@ main .container-fluid .row tbody tr .text-bg-warning{
   display: block;
  }
 
-
-
+}
+@media screen and (max-width: 576px){
+  .offcanvas{
+    width: 100% !important;
+  }
 }

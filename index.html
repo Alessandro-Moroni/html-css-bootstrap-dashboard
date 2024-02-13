@@ -41,19 +41,30 @@
             <i class="fa-solid fa-ellipsis-vertical"></i>
            </a></li>
           <li>
-           
+            
+            <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+              
+            <div class="collapse position-absolute" id="collapseExample">
+              <div class="card card-body">
+                  <p>Profilo</p>
+                  <p>Fatturazione</p>
+                <p>Logout</p>
+              </div>
+            </div>
+            
           </li>
           
         </ul>
       </nav>
-    
-    </div>
+      
   </header>
   <!-- fine header -->
 
   <!-- main -->
   <main>
-    <div class="d-flex ">
+    <div class="d-flex container-main">
       <div class="fixed-left">
        <div class="left-menu d-flex flex-column align-items-center ">
         <div>
@@ -101,21 +112,19 @@
 
           </div>
           <div class="plus d-flex align-items-center">
-            <span>Nuovo Studente</span>
+            <span class="new-student">Nuovo Studente</span>
            
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-              <i class="fa-solid fa-plus"></i>
-            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
             
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"   aria-labelledby="offcanvasExampleLabel">
-              <div class="container-fluid ">
+            <div class="container-fluid">
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo utente</h5>
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci  un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
+              </div>
+              <div class="offcanvas-body">
                 <div class="row row-cols-2 mb-3">
-                  
+                            
                   <div class="col">
                     <label for="exampleInputEmail1" class="form-label">Nome</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -124,11 +133,11 @@
                     <label for="exampleInputEmail1" class="form-label">Cognome</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
-
+          
                 </div>
-
+          
                 <div class="row row-cols-2 mb-3">
-
+          
                   <div class="col">
                     Email
                         <div class="input-group">
@@ -140,11 +149,11 @@
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-
+          
                 </div>
-
+          
                 <div class="row row-cols-2 mb-3">
-
+          
                   <div class="col">
                     Email
                     <div class="input-group">
@@ -156,18 +165,18 @@
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-
+          
                 </div>
-
+          
                 <div class="row mb-3">
-
+          
                   <div class="col">
                     <label for="exampleInputEmail1" class="form-label">Indirizzo</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                       
                 </div>
-
+          
                 <div class="row mb-3">
                
                   <div class="col-6">
@@ -187,7 +196,7 @@
                     <label for="exampleInputEmail1" class="form-label">CAP</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
-
+          
                 </div>
                 
                 <div class="row mb-3">
@@ -199,7 +208,7 @@
                     </div>
                  </div>
                 </div>
-
+          
                 <div class="row mb-3">
                   <div class="col">
                     <div class="form-check">
@@ -208,19 +217,21 @@
                     </div>
                   </div>
                 </div>
-
+          
                 <div class="row mb-3">
                   <div class="col">
                     <button type="submit" class="btn btn-primary">Salva</button>
                     <button type="submit" class="btn btn-warning">Svuota</button>
                   </div>
                 </div>
-
-
-
-
               </div>
             </div>
+          </div>
+
+
+
+              
+            
           </div>
         </div>
         
@@ -456,7 +467,8 @@
   
   <!-- footer -->
   <footer>
-   
+  
+ 
   </footer>
 </body>
 </html>
