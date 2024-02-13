@@ -106,53 +106,142 @@
           </div>
         </div>
         
-        <div class="d-flex container-columns">
-          <div class="container-col-l">
-            <div class="row flex-column col-l">
-              <div class="col col-table">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th scope="col">Nome</th>
-                      <th scope="col-"></th>
-                      <th scope="col-1"></th>
-                      <th scope="col-1"></th>
-                      <th scope="col-1"></th>
-                      <th scope="col-1"></th>
-                      <th scope="col-1"></th>
-                      <th scope="col-1"></th>
-                      <th scope="col-1">Data inizio</th>
-                      <th scope="col-1">ROI</th>
-                      <th scope="col-1">Stato</th>
-                      <th scope="col-1">Azioni</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <th scope="row">1</th>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td>15 Feb 2021</td>
-                      <td>20%</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaam neque itaque ducimus pariatur a.</div>
-            </div>
-          </div>
+        <div class="container-fluid">
+          <div class="row row-cols-1 ">
+            <div class="col my-2  col-lg-8 debug">
 
-          <div class="container-col-r">
-            <div class="row flex-column col-r">
-              <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt laboriosam quas, hic cupiditate minima ad alias, voluptas eveniet harum repellendus quaerat, est officia tempore voluptates quasi facilis voluptatibus ea?</div>
-              <div class="col">lorem1000</div>
+              <div class="card my-2">
+                <div class="name-table d-flex align-items-center ">
+                  <h2>Prossime classi</h2>
+                </div>
+                <div class="card-body">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 75</th>
+                        <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 76</th>
+                        <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 77</th>
+                        <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-warning">Process</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 78</th>
+                        <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 79</th>
+                        <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-danger">Failed</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 80</th>
+                        <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 81</th>
+                        <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-danger">Failed</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row"><i class="fa-solid fa-code"></i> Classe 82</th>
+                        <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          <button type="button" class="btn btn-outline-secondary trash"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="card my-2">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col my-2 col-lg-4 debug">
+
+              <div class="card my-2">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+
+              <div class="card my-2">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

@@ -177,25 +177,32 @@ img{
 
 /* columns */
 
-.container-col-l{
-  width: 70%;
+tbody tr th{
+  width: 50%;
 }
-.container-col-r{
-  width: 30%;
-  background-color: yellow;
+tbody tr .fa-code{
+  background-color: rgb(242, 101, 81);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-right: 10px;
 }
-.col-l{
-  padding: 20px;
-
+tbody tr .trash{
+  margin-left: 5px;
 }
-.col-table{
-  border: 1px solid black;
-  border-radius: 10px;
+tbody tr .text-bg-warning{
+  color: white !important;
 }
-
-
-
-
+.name-table{
+  background-color: rgb(247, 247, 247);
+  height: 70px;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  padding-left: 10px;
+  
+}
 @media screen and (max-width: 992px){
   .schemes{
     flex-direction: column;
@@ -255,13 +262,6 @@ img{
 .graphs .head .l-head .name .more{
   display: block;
  }
-.container-columns{
-  flex-direction: column;
-}
-.container-col-l,
-.container-col-r{
-  width: 100%;
-}
 
 
 
