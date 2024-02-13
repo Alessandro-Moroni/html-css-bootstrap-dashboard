@@ -5,7 +5,7 @@
 header{
   height: 80px;
   background-color: rgb(248, 249, 250);
-  padding: 2px 0;
+  padding: px 0;
 }
 
 
@@ -21,11 +21,12 @@ img{
 }
 .container-main{
   height: 100vh;
+  width: 100%;
 }
 
 /* header */
 .logo{
-  height: 100%;
+  height: 80%;
   width: 15%;
   background-color: rgb(255, 255, 255);
   padding: 10px;
@@ -34,7 +35,7 @@ img{
   display: none;
 }
 .text-chat{
-  height: 70%;
+  height: 80%;
   width: 70%;
   border-radius: 10px;
   background-color: rgb(229, 229, 229);
@@ -50,6 +51,7 @@ img{
   width: 5%;
 }
 .menu{
+  height: 80%;
   width: 15%;
   background-color: rgb(255, 255, 255);
   padding: 10px 20px;
@@ -205,20 +207,19 @@ main .container-fluid .row tbody tr .text-bg-warning{
   
 }
 @media screen and (max-width: 992px){
-  .schemes{
-    flex-direction: column;
-  }
+
   .fixed-left{
     width: 100px;
   }
-  .container-l,
-  .container-r{
-    width: 100%;
+
+  .logo{
+    width: 10%;
   }
   .menu-off{
     display: none;
   }
-  .des-logo{display: none;
+  .des-logo{
+    display: none;
   }
   .phone-logo{
     display: block;
@@ -227,7 +228,9 @@ main .container-fluid .row tbody tr .text-bg-warning{
     width: 80%;
   }
   .menu{
-    width: 5%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
   }
  .menu ul li .fa-list{
   display: none;
@@ -265,8 +268,12 @@ main .container-fluid .row tbody tr .text-bg-warning{
  }
 
 }
+
 @media screen and (max-width: 576px){
   .offcanvas{
     width: 100% !important;
+  }
+  tbody tr th{
+    width: 35%;
   }
 }
