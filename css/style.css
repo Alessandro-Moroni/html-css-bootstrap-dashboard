@@ -165,13 +165,9 @@ img{
 .head .plus span{
   margin-right: 20px;
 }
-.head .plus div{
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 40px;
+.head .plus .btn-primary{
+  color: white;
   border: 1px solid white;
-  border-radius: 5px;
 }
 
 
@@ -193,7 +189,7 @@ tbody tr .fa-code{
 tbody tr .trash{
   margin-left: 5px;
 }
-tbody tr .text-bg-warning{
+main .container-fluid .row tbody tr .text-bg-warning{
   color: white !important;
 }
 .name-table{
